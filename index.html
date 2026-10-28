@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMFST Design Tokens - Komponens Galeria</title>
+  
+  <!-- Villanásmentes témaváltó script (a CSS előtt) -->
+  <script src="theme.js"></script>
+  
+  <!-- Tokenek és komponensek CSS -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-8);">
+    <div>
+      <h1>UMFST Design System</h1>
+      <p>Ketszintu token architektura es komponens bemutato oldal.</p>
+    </div>
+    
+    <!-- Témaválasztó gombok -->
+    <div style="display: flex; gap: var(--space-2);">
+      <button class="btn btn-secondary" onclick="alkalmazTema('light')">Világos</button>
+      <button class="btn btn-secondary" onclick="alkalmazTema('dark')">Sötét</button>
+      <button class="btn btn-secondary" onclick="alkalmazTema('rendszer')">Rendszer</button>
+    </div>
+  </header>
+
+  <main style="display: flex; flex-direction: column; gap: var(--space-8);">
+    <!-- Gombok szekció -->
+    <section>
+      <h2>Gombok (Buttons)</h2>
+      <div style="display: flex; gap: var(--space-3); align-items: center; margin-top: var(--space-3);">
+        <button class="btn btn-primary">Elsődleges gomb</button>
+        <button class="btn btn-secondary">Másodlagos gomb</button>
+      </div>
+    </section>
+
+    <!-- Kártya szekció -->
+    <section>
+      <h2>Kártya (Card)</h2>
+      <div class="card" style="margin-top: var(--space-3);">
+        <div class="card-header">Kártya Címsor</div>
+        <div class="card-body">
+          Ez egy példa kártya komponens, amely kizárólag szemantikus tokeneket használ a háttérhez, szöveghez és kerethez.
+        </div>
+        <div>
+          <button class="btn btn-primary">Részletek</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Input mező és Figyelmeztetés -->
+    <section style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+      <div class="input-group">
+        <label class="input-label" for="username">Felhasználónév</label>
+        <input class="input-field" type="text" id="username" placeholder="Add meg a neved...">
+      </div>
+
+      <div>
+        <h2 style="margin-bottom: var(--space-3);">Figyelmeztetés (Alert)</h2>
+        <div class="alert">
+          Fontos értesítés: A rendszer frissítés alatt áll a következő órában.
+        </div>
+      </div>
+    </section>
+
+    <!-- Címkék (Badges) -->
+    <section>
+      <h2>Címkék (Badges)</h2>
+      <div style="display: flex; gap: var(--space-2); margin-top: var(--space-3);">
+        <span class="badge">Normál Címke</span>
+        <span class="badge badge-accent">Kiemelt Címke</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
