@@ -139,3 +139,22 @@ p {
     font-size: var(--font-size-base);
     border-left: 4px solid var(--color-accent);
 }
+
+/* Címke (Badge) komponens */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-full);
+    background-color: var(--color-surface);
+    color: var(--color-accent);
+    border: 1px solid var(--color-border);
+}
+
+.badge-accent {
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+    border-color: transparent;
+}
